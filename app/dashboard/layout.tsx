@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import SideNav from '@/app/ui/dashboard/sidenav';
 
+export const experimental_ppr = true;
+
 const Layout = (props: PropsWithChildren) => {
   const { children } = props
   console.log('[children]', children)
