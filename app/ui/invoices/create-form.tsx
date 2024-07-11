@@ -12,6 +12,11 @@ import {
 import { Button } from '@/app/ui/button';
 import { ErrorMessage } from '@/app/ui/invoices/error-message';
 import { createInvoice, State } from '@/app/lib/actions';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Create Invoice',
+};
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState: State = { message: null, errors: {} };
